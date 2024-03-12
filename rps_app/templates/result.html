@@ -1,0 +1,17 @@
+<!-- result.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Result</title>
+</head>
+<body>
+    <h1>Game Result</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+        <a href="{% url 'play_game' %}">Play Again</a>
+    {% else %}
+        <p>No result yet. Please play the game.</p>
+    {% endif %}
+</body>
+</html>
